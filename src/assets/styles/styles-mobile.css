@@ -1,0 +1,57 @@
+.flex-one {
+  flex: 1;
+}
+
+.flex-zero {
+  flex: 0;
+}
+
+.picto {
+  background-color: $darkBlue;
+  color: $white;
+}
+
+.rot90 {
+  overflow: hidden;
+  img{
+    transform: rotate(90deg);
+    margin-top: 50px;
+    margin-bottom: 45px;
+    width: 225px;
+  }
+}
+
+.rot180 {
+  overflow: hidden;
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.rot270 {
+  overflow: hidden;
+  img {
+    transform: rotate(270deg);
+    margin-top: 50px;
+    margin-bottom: 45px;
+    width: 225px;
+  }
+}
+
+.fit-vertical img {
+  max-width: 150px;
+}
+
+.pointy {
+    cursor: pointer;
+
+    &.found {
+      background: $red;
+    }
+}
+
+/* $darkBlue
+$darkNeutral
+$white
+$red
+$neutral */

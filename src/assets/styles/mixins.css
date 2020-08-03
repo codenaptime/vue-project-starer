@@ -1,0 +1,16 @@
+@define-mixin flex-builder $className, $direction: row, $alignI: flex-start, $justify: flex-start, $alignC: flex-start, $wrap: nowrap {
+    .$(className) {
+        display: flex;
+        flex-direction: $direction;
+        align-items: $alignI;
+        justify-content: $justify;
+        align-content: $alignC;
+        flex-wrap: $wrap;
+    }
+}
+
+
+/* Flexbox Classes - Generated with flex-builder mixin */
+@mixin flex-builder flx {};
+@mixin flex-builder flx-col, column {};
+@mixin flex-builder flx-wrap, row, flex-start, space-between, flex-start, wrap {};

@@ -1,0 +1,107 @@
+/* put styles that are specific to the current project here */
+
+body {
+  background-color: $white;
+  margin: auto;
+  color: $black;
+  font-size: $mainFontSize;
+  font-family: $fontFamily;
+}
+
+#main {
+  @extend .fx-col;
+  background-color: white;
+  padding-top: 60px;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+h1,h2,h3,h4,h5,h6 {
+  padding: .3em 0;
+}
+a,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover,
+button:hover {
+  opacity: 0.8;
+}
+p {
+  margin: 0.75em 0;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.error {
+  color: #ef3e42;
+}
+.text-small {
+  font-size: 90%;
+}
+div.input {
+  margin-bottom: 0.2em;
+}
+select[multiple] {
+  height: 80px;
+  background: none;
+
+  option {
+    padding: 0 .45em;
+
+    &:first-child {
+      margin-top: .3em;
+    }
+
+    &:last-child {
+      margin-bottom: .3em;
+    }
+  }
+}
+
+.input {
+  padding: 5px;
+}
+[type=checkbox]+.checkable {
+  margin-left: .3em;
+  padding-left: 1.5em;
+}
+[type=radio]+.checkable {
+  margin-left: .5em;
+  padding-left: .9em;
+  margin-right: .6em;
+}
+
+footer {
+  background: $coral;
+  color: $black;
+}
