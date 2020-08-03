@@ -5,7 +5,7 @@
   "author": "naptime.dev",
   "private": true,
   "scripts": {
-    "serve": "webpack-dev-server --debug=8080 --inline --progress --config build/webpack.dev.conf.js",
+    "serve": "webpack-dev-server --config build/webpack.dev.conf.js",
     "dev": "concurrently \"npm run eslint-src\" \"npm run serve\"",
     "eslint-src": "esw -w --ext .js,.vue src",
     "build": "npm install && npm prune && node build/build.js",
